@@ -1,6 +1,9 @@
 from pprint import pprint
 from test_faker import names
 import math
+import time
+
+start_time = time.clock()
 
 def binary_search(names, item, low, high, count):
 
@@ -35,3 +38,7 @@ else:
 print
 
 print("The number of elements searched in names was ", count[0])
+
+print
+#Calculate running time
+print(time.clock() - start_time, " seconds")
