@@ -23,6 +23,8 @@ def binary_search(names, item, low, high, count):
 
 count = [0]
 
+print("Logarithm 128 ", int(math.log(len(names), 2)))
+
 found = binary_search(names, "Nicole", 0, (len(names)-1), count)
 
 if (found != -1):
